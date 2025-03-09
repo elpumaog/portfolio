@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 mt-20">
+    <header class="bg-white shadow-md fixed w-full top-0">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold text-blue-600">Mi Portafolio</h1>
+
+            <!-- Menu de navegacion -->
+            <nav>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600">Inicio</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-600">Sobre mi</a></li>
+                    <li><a href="#projects" class="text-gray-600 hover:text-blue-600">Proyectos</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Boton menu movil -->
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                ☰
+            </button>
+        </div>
+    </header>
+    <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="text-center px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Hola! Soy Alejandro</h2>
+            <p class="text-lg md:text-xl mb-6">Desarrollador web apasionado por crear experiencias increibles.</p>
+            <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                Contactame
+            </a>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center">
+            <!-- Imagen -->
+             <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                <img src="foto.jpg" alt="Sobre mi" class="w-64 h-64 md:w-80 md:h-80 rounded-lg shadow-lg mx-auto">
+             </div>
+
+             <!-- Texto -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Mi</h2>
+                <p class="text-gray-600 text-lg mb-4">
+                    Soy un apasaionado desarrollador web con experiencia em frontend y backend. Me encanta crear soluciones innovadoras y optimizadas para la web.
+                </p>
+                <p class="text-gray-600 text-lg mb-4">
+                    Manejo tecnologías como HTML, CSS, JavaScript y frameworks como Tailwind CSS para hacer diseños modernos y funcionales.
+                </p>
+                <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                    Ver mis proyectos
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">
+                Mis Proyectos
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 -->
+                 <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="digital-clock.png" alt="Proyecto 1" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Reloj Digital</h3>
+                    <p class="text-gray-600">Reloj Digital con HTML, CSS y JavaScript con funcionalidades como cambiar el formato de 24h a 12h y poner alarmas.</p>
+                    <p class="text-green-600">Fácil</p>
+                    <a href="https://elpumaog.github.io/digital-clock/" class="block mt-4 text-blue-600 font-semibold hover:underline">Ver proyecto</a>
+                    <a href="https://github.com/elpumaog/digital-clock" class="block mt-4 text-blue-600 font-semibold hover:underline">Repositorio en Github</a>
+                 </div>
+                
+                 <!-- Proyecto 2 -->
+                 <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">PvmaChat</h3>
+                    <p class="text-gray-600">Chat en Tiempo Real con Python</p>
+                    <p class="text-yellow-600">Intermedio</p>
+                    <a href="https://github.com/elpumaog/pvmachat" class="block mt-4 text-blue-600 font-semibold hover:underline">Repositorio en GitHub</a>
+                 </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="finances.png" alt="Proyecto 3" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Finanzas Personales</h3>
+                    <p class="text-gray-600">Descripcion breve del proyecto.</p>
+                    <p class="text-green-600">Fácil</p>
+                    <a href="https://elpumaog.github.io/personal-finances/" class="block mt-4 text-blue-600 font-semibold hover:underline">Ver proyecto</a>
+                    <a href="https://github.com/elpumaog/pvmachat" class="block mt-4 text-blue-600 font-semibold hover:underline">Repositorio en GitHub</a>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">Habilidades</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+                <!-- Habilidad 1 -->
+                 <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">HTML5</h3>
+                 </div>
+                <!-- Habilidad 2 -->
+                 <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">CSS3</h3>
+                 </div>
+                <!-- Habilidad 3 -->
+                 <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">JavaScript</h3>
+                 </div>
+                <!-- Habilidad 4 -->
+                 <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" class="w-16 h-16 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Tailwind CSS</h3>
+                 </div>
+                <!-- Habilidad 5 -->
+                 <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React JS" class="w-16 h-16 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">React JS</h3>
+                 </div>
+                <!-- Habilidad 6 -->
+                 <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Python</h3>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Contactame</h2>
+
+            <div class="max-w-lg mx-auto">
+                <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+                    <!-- Nombre -->
+                     <div class="mb-4">
+                        <label for="name" class="block text-gray-800 font-semibold mb-2">Nombre</label>
+                        <input type="text" name="name" id="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                     </div>
+                    <!-- Correo Electronico -->
+                     <div class="mb-4">
+                        <label for="email" class="block text-gray-800 font-semibold mb-2">Correo Electronico</label>
+                        <input type="email" name="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                     </div>
+                    <!-- Mensaje -->
+                     <div class="mb-4">
+                        <label for="message" class="block text-gray-800 font-semibold mb-2">Mensaje</label>
+                        <textarea rows="6" name="message" id="message" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                     </div>
+                    <!-- Boton de enviar -->
+                     <div class="text-center">
+                        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Enviar Mensaje
+                        </button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <div class="mb-6">
+                <a href="https://www.linkedin.com/" target="_blank" class="text-white hover:text-blue-600 mx-4">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/elpumaog/" target="_blank" class="text-white hover:text-gray-400 mx-4">
+                    GitHub
+                </a>
+                <a href="mailto:alejandrogomezalarcon1@gmail.com" class="text-white hover:text-gray-400 mx-4">
+                    Correo
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">
+                &copy; Alejandro Gómez. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
